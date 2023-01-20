@@ -1,0 +1,28 @@
+.one{
+  border-style: double;
+  border-color: white;
+  padding: 10px;
+  margin:20px 25%;
+  background-color: white;
+
+}
+/* .two{
+  padding: 20px
+} */
+
+.two{
+  background-color: beige;
+}
+
+.space{
+  margin: 15px;
+}
+
+div{
+  color: white;
+}
+p{
+  font-size: 20px;
+}
+
+

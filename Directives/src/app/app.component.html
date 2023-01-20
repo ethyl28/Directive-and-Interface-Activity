@@ -1,0 +1,27 @@
+<div>
+  <h1>{{ title }}</h1>
+</div>
+<!-- the addStudent here is from the method of app component ts then using dollar event to pass the value of add student
+   to app component-->
+
+<div *ngIf="!isAddStudent">
+
+  <p class="glitch">
+    <span aria-hidden="true"></span> Student List
+    <span aria-hidden="true"></span>
+  </p>
+
+
+  <div *ngFor="let student of studentList">
+    <app-student [studentIn]="student"></app-student>
+  </div>
+
+  <!-- <button (click)="addNewStudent()">Add New Student</button> -->
+
+</div>
+
+
+
+<div *ngIf="isAddStudent">
+  <app-add-student (studentOut)="addStudent($event)"></app-add-student>
+</div>

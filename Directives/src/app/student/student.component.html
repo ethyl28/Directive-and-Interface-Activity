@@ -1,0 +1,17 @@
+
+<div class="one">
+<h2>Name: {{ studentIn.firstName }} {{ studentIn.lastName }}</h2>
+<p>Age: {{ studentIn.age }}</p>
+<p>Gender: {{ studentIn.gender }}</p>
+<p>Nationality: {{ studentIn.nationality }}</p>
+<p>Home Address: {{studentIn.homeAddress}}</p>
+<p>Status: {{studentIn.status}}</p>
+<br />
+<span class="two">
+<h2>{{studentIn.educBack}}</h2>
+<p class="space">Elementary School: {{studentIn.elemSchool}}</p>
+<p  class="space">High School: {{studentIn.highSchool}} </p>
+<p  class="space" *ngIf="studentIn.college">College: {{studentIn.college}}</p>
+<p  class="space" *ngIf="studentIn.degree">Degree: {{ studentIn.degree }}</p>
+</span>
+</div>

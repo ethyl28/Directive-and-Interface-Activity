@@ -1,0 +1,44 @@
+<!-- Form -->
+
+<p class="glitch">
+  <span aria-hidden="true"></span> Add Students
+  <span aria-hidden="true"></span>
+</p>
+
+<div class="form-holder">
+  <div class="form-content">
+    <div class="form-items">
+      <form [formGroup]="studentForm" (ngSubmit)="addStudent()">
+        <h2><i>Add the Student Information</i></h2>
+        <label for="first-name">First Name </label>
+        <input id="first-name" type="text" formControlName="firstName" />
+        <br />
+
+        <label for="lastst-name">Last Name </label>
+        <input id="last-name" type="text" formControlName="lastName" />
+        <br />
+
+        <label for="age"> Age </label>
+        <input id="age" type="number" formControlName="age" />
+        <br />
+
+        <label for="gender">Gender </label>
+        <input id="gender" type="text" formControlName="gender" />
+        <br />
+
+        <label for="nationality">Nationality </label>
+        <input id="nationality" type="text" formControlName="nationality" />
+        <br />
+
+        <label for="degree">Degree </label>
+        <input id="degree" type="text" formControlName="degree" />
+        <br />
+        <br />
+
+
+          <button id="submit" type="submit">Add Student</button>
+
+      </form>
+    </div>
+  </div>
+</div>
